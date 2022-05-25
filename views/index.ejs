@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Bienvenidos a <%= title %></p>
+    <p>En <a href="/logs" target="_blank">/logs</a> encontramos todos los archivos de log ordenados por fecha de creación</p>
+    <p>En el csv aparecerá cada entrada insertada en una línea, con su identificador, tiempo de inserción (en formato timestamp), frecuencia y valores medidos.
+    	 </p>
+    <p>Para insertar un conjunto de datos debemos realizar una petición HTTP GET hacia el punto /record, con los siguientes parámetros:
+    	<ul>
+    		<li><strong>id</strong> identificador del experimento que se ha realizado</li>
+    		<li><strong>data</strong> valor medido</li>
+    	</ul>
+
+    			Un ejemplo de inserción es la siguiente <a href="/record?id=nodo1&data=100" target="_blank">/record?id=nodo1&data=100</a> </p>
+
+    			
+  </body>
+</html>
