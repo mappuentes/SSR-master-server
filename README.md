@@ -1,5 +1,5 @@
 # Ejemplo servidor para SSR
-Bienvenidos a al servidor cloud para recibir dats
+Bienvenidos a al servidor cloud para recibir datos
 
 En /logs encontramos todos los archivos de log ordenados por fecha de creación
 
