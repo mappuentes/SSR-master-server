@@ -41,4 +41,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+server.listen(3000, () => {
+    console.log(`Server is running`);
+});
+
 module.exports = app;
