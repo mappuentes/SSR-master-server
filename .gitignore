@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+public/logs
+public/old_logs
