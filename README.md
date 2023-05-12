@@ -7,6 +7,7 @@ En la carpeta de proyecto hacemos:
 npm install -g nodemon
 npm install
 ```
+En la carpeta public, creamos una carpeta de nombre: logs
 
 ## Ejecución:
 En la carpeta de proyecto hacemos:
