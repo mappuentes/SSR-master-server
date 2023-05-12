@@ -1,17 +1,35 @@
 # Data-Logger
 Bienvenidos a Data-Logger
 
+## Instalación: Nos aseguramos de que Nodejs y Npm están instalados.
+En la carpeta de proyecto hacemos:
+```
+npm install -g nodemon
+npm install
+```
+
+## Ejecución:
+En la carpeta de proyecto hacemos:
+```
+npm start
+```
+La aplicación se ejecuta en localhost:3000
+
+## Información adicional
+
 En /logs encontramos todos los archivos de log ordenados por fecha de creación
 
-En el csv aparecerá cada entrada insertada en una línea, con su identificador, tiempo de inserción (en formato timestamp), frecuencia y valores medidos.
+En el csv aparecerá cada entrada insertada en una línea, con su identificador, tiempo de inserción (en formato timestamp), temperatura, humedad, CO2, volatiles
 
 Para insertar un conjunto de datos debemos realizar una petición HTTP GET hacia el punto /record, con los siguientes parámetros:
 
-- id identificador del experimento que se ha realizado
-- frec frecuencia de muestreo de las medidas
-- data valores medidos separados por comas
+- id_nodo identificador del nodo (string)
+- temperatura (float / double)
+- humedad valores (float / double)
+- co2  (interger)
+- volatiles (interger)
 
 Un ejemplo de inserción es la siguiente 
 ```
-/record?id=experimentoPrueba1&data=0.1,0.2,0.1,0.3,0.4&frec=100
+/record?id_nodo=nodoPrueba1&temperatura=24.5&humedad=68.2&co2=293&volatiles=112
 ```
